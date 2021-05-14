@@ -1,0 +1,65 @@
+ 
+                             .-.							   
+                            {{@}}							   
+	                     8@8							   
+			     888							   
+			     8@8							   
+	                _    )8(    _							   
+		       (@)__/8@8\__(@)							   
+   ____________________ `~"-=):(=-"~`							   
+  |<><><>  |  |  <><><>|     |.|							   
+  |<>      |  |      <>|     |T|							   
+  |<>      |  |      <>|     |'|							   
+  |<>   .--------.   <>|     |.|							   
+  |     |   ()   |     |     |I|							   
+  |_____| (O\/O) |_____|     |'|							   
+  |     \   /\   /     |     |.|							   
+  |------\  \/  /------|     |N|							   
+  |       '.__.'       |     |'|							   
+  |        |  |        |     |.|							   
+  :        |  |        :     |K|							   
+   \<>     |  |     <>/      |'|							   
+    \<>    |  |    <>/       |.|							   
+     \<>   |  |   <>/        |E|							   
+      `\<> |  | <>/'         |'|							   
+        `-.|  |.-`           \ /							   
+           '--'               ^				    TINKE SOFTWARE
+						     	Free and Open Source Software // Parent Company: Eihwaz Software
+						- 100% Free, Original and Quality Code -
+
+
+Official Web Servers
+https://www.TinkeSoftware.com
+
+Official Electronic Mail Addresses
+TinkeSoftware@Protonmail.com
+
+Official GIT Software Project Hosting
+https://www.GitHub.com/TinkeSoftware
+https://www.BitBucket.com/TinkeSoftware
+https://www.LaunchPad.net/TinkeSoftware
+
+Official Software Project Hosting
+https://www.SourceForge.net/u/tinkesoftware/profile/
+https://www.HotScripts.com/listings/publisherInfo/947805/
+
+Official Social Media Accounts
+TinkeSoftware@Instagram
+TinkeSoftware@Twitter
+TinkeSoftware@FaceBook
+TinkeSoftware@PhotoBucket
+
+  _____        __                  
+ / ___/__ ____/ /  ___ ______ _____
+/ /__/ -_) __/ _ \/ -_) __/ // (_-<
+\___/\__/_/ /_.__/\__/_/  \_,_/___/
+                                   
+* Cerberus Content Management System // Advanced PHP-SQL Content Management System
+* Magysk Theme Writer // C++ Application For Building Themes For Cerberus Content Management System
+* Stokje Application Writer // C++ Application For Building Applications For Cerberus Content Management System
+  _____         __  __        ____                   
+ / ___/_____ __/ /_/ /____   / __/__  ___________ ___
+/ (_ / __/ // / __/ __/ -_) / _// _ \/ __/ __/ -_|_-<
+\___/_/  \_,_/\__/\__/\__/ /_/  \___/_/  \__/\__/___/
+                                                     
+* Grutte Forces // Advanced C++, Python Telemetry-Stylometry Scanner, Network and Profile Blocker
