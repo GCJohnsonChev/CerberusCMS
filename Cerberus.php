@@ -58,7 +58,7 @@ error_reporting("E_WARNING ^ E_NOTICE");
  ===========================
 */
 
-$_INSTALLATION_FILE									= "Install.php";
+$_INSTALLATION_FILE								= "Install.php";
 
 if (file_exists($_INSTALLATION_FILE)) {
 
@@ -92,7 +92,7 @@ if (file_exists($_MAIN_CONFIGURATION_FILE)) {
  ===========================
 */
 
-$DB													= new DB();
+$DB										= new DB();
 
 /*
  ===========================
@@ -102,8 +102,8 @@ $DB													= new DB();
  ===========================
 */
 
-$_CERBERUS_DATABASE_CONNECTION 						= mysql_connect($_ACCESS_DATABASE_HOSTNAME, $_ACCESS_DATABASE_USERNAME, $_ACCESS_DATABASE_PASSWORD);
-$_CERBERUS_DATABASE_NAME_SELECTION 					= mysql_select_db($_ACCESS_DATABASE_NAME);
+$_CERBERUS_DATABASE_CONNECTION 							= mysql_connect($_ACCESS_DATABASE_HOSTNAME, $_ACCESS_DATABASE_USERNAME, $_ACCESS_DATABASE_PASSWORD);
+$_CERBERUS_DATABASE_NAME_SELECTION 						= mysql_select_db($_ACCESS_DATABASE_NAME);
 
 if ($_CERBERUS_DATABASE_CONNECTION) {
 
@@ -119,8 +119,8 @@ if ($_CERBERUS_DATABASE_NAME_SELECTION) {
  ===========================
 */
 
-$_DB_Query_Select_Main_Settings						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_settings WHERE id='1'");
-$_DB_Query_Main_Settings_Fetch_Array				= $DB->fetch_array($_DB_Query_Select_Main_Settings);
+$_DB_Query_Select_Main_Settings							= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_settings WHERE id='1'");
+$_DB_Query_Main_Settings_Fetch_Array						= $DB->fetch_array($_DB_Query_Select_Main_Settings);
 
 /*
  ===========================
@@ -131,19 +131,19 @@ $_DB_Query_Main_Settings_Fetch_Array				= $DB->fetch_array($_DB_Query_Select_Mai
 */
 
 $_GLOBAL_SAFEHTML_DIRECTORY							= $_DB_Query_Main_Settings_Fetch_Array['settings_safeHTML_directory'];
-$_GLOBAL_SAFEHTML_STATUS							= $_DB_Query_Main_Settings_Fetch_Array['settings_safeHTML_status'];
+$_GLOBAL_SAFEHTML_STATUS								= $_DB_Query_Main_Settings_Fetch_Array['settings_safeHTML_status'];
 $_GLOBAL_COOKIE_TIME								= $_DB_Query_Main_Settings_Fetch_Array['settings_cookie_time'];
 $_GLOBAL_GZIP_STATUS								= $_DB_Query_Main_Settings_Fetch_Array['settings_gzip_status'];
-$_GLOBAL_IMAGE_EXTENSION							= $_DB_Query_Main_Settings_Fetch_Array['settings_image_extension'];
+$_GLOBAL_IMAGE_EXTENSION								= $_DB_Query_Main_Settings_Fetch_Array['settings_image_extension'];
 $_GLOBAL_LANGUAGE_DIRECTORY							= $_DB_Query_Main_Settings_Fetch_Array['settings_language_directory'];
 $_GLOBAL_OFFLINE_STATUS								= $_DB_Query_Main_Settings_Fetch_Array['settings_offline_status'];
-$_GLOBAL_SITE_TITLE									= $_DB_Query_Main_Settings_Fetch_Array['settings_site_title'];
-$_GLOBAL_EMOJI_DIRECTORY							= $_DB_Query_Main_Settings_Fetch_Array['settings_emoji_directory'];
-$_GLOBAL_SOUND_EXTENSION							= $_DB_Query_Main_Settings_Fetch_Array['settings_sound_extension'];
-$_GLOBAL_THEME_DIRECTORY							= $_DB_Query_Main_Settings_Fetch_Array['settings_theme_directory'];
-$_GLOBAL_UPLOAD_SIZE_PRIVATE						= $_DB_Query_Main_Settings_Fetch_Array['settings_upload_size_private'];
+$_GLOBAL_SITE_TITLE								= $_DB_Query_Main_Settings_Fetch_Array['settings_site_title'];
+$_GLOBAL_EMOJI_DIRECTORY								= $_DB_Query_Main_Settings_Fetch_Array['settings_emoji_directory'];
+$_GLOBAL_SOUND_EXTENSION								= $_DB_Query_Main_Settings_Fetch_Array['settings_sound_extension'];
+$_GLOBAL_THEME_DIRECTORY								= $_DB_Query_Main_Settings_Fetch_Array['settings_theme_directory'];
+$_GLOBAL_UPLOAD_SIZE_PRIVATE							= $_DB_Query_Main_Settings_Fetch_Array['settings_upload_size_private'];
 $_GLOBAL_UPLOAD_SIZE_PUBLIC							= $_DB_Query_Main_Settings_Fetch_Array['settings_upload_size_public'];
-$_GLOBAL_TEXT_EDITOR_DIRECTORY						= $_DB_Query_Main_Settings_Fetch_Array['settings_text_editor_directory'];
+$_GLOBAL_TEXT_EDITOR_DIRECTORY							= $_DB_Query_Main_Settings_Fetch_Array['settings_text_editor_directory'];
 
 /*
  ===========================
@@ -153,9 +153,9 @@ $_GLOBAL_TEXT_EDITOR_DIRECTORY						= $_DB_Query_Main_Settings_Fetch_Array['sett
  ===========================
 */
 
-$_GLOBAL_USERNAME									= $_COOKIE['cerberus_username'];
-$_GLOBAL_PASSWORD									= $_COOKIE['cerberus_password'];
-$_GLOBAL_LANGUAGE_COOKIE							= $_COOKIE['cerberus_language'];
+$_GLOBAL_USERNAME								= $_COOKIE['cerberus_username'];
+$_GLOBAL_PASSWORD								= $_COOKIE['cerberus_password'];
+$_GLOBAL_LANGUAGE_COOKIE								= $_COOKIE['cerberus_language'];
 
 /*
  ===========================
@@ -173,8 +173,8 @@ if ($_GLOBAL_USERNAME && $_GLOBAL_PASSWORD != null) {
  ===========================
 */
 
-$_DB_Query_Select_Member_Credentials 				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_members WHERE member_username='$_GLOBAL_USERNAME'");
-$_DB_Query_Member_Credentials_Fetch_Array 			= $DB->fetch_array($_DB_Query_Select_Member_Credentials);
+$_DB_Query_Select_Member_Credentials 						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_members WHERE member_username='$_GLOBAL_USERNAME'");
+$_DB_Query_Member_Credentials_Fetch_Array 					= $DB->fetch_array($_DB_Query_Select_Member_Credentials);
 
 /*
  ===========================
@@ -184,13 +184,13 @@ $_DB_Query_Member_Credentials_Fetch_Array 			= $DB->fetch_array($_DB_Query_Selec
  ===========================
 */
 
-$_GLOBAL_MEMBER_ACCESS_LEVEL						= $_DB_Query_Member_Credentials_Fetch_Array['member_access_level'];
+$_GLOBAL_MEMBER_ACCESS_LEVEL							= $_DB_Query_Member_Credentials_Fetch_Array['member_access_level'];
 $_GLOBAL_MEMBER_AVATAR								= $_DB_Query_Member_Credentials_Fetch_Array['member_avatar'];
-$_GLOBAL_MEMBER_BANNED_STATUS						= $_DB_Query_Member_Credentials_Fetch_Array['member_banned_status'];
-$_GLOBAL_MEMBER_EMAIL_ADDRESS						= $_DB_Query_Member_Credentials_Fetch_Array['member_email_address'];
-$_GLOBAL_MEMBER_EXPERIENCE_AMOUNT					= $_DB_Query_Member_Credentials_Fetch_Array['member_experience_amount'];
-$_GLOBAL_MEMBER_LANGUAGE							= $_DB_Query_Member_Credentials_Fetch_Array['member_language'];
-$_GLOBAL_MEMBER_NUMBER_OF_POSTS						= $_DB_Query_Member_Credentials_Fetch_Array['member_number_of_posts'];
+$_GLOBAL_MEMBER_BANNED_STATUS							= $_DB_Query_Member_Credentials_Fetch_Array['member_banned_status'];
+$_GLOBAL_MEMBER_EMAIL_ADDRESS							= $_DB_Query_Member_Credentials_Fetch_Array['member_email_address'];
+$_GLOBAL_MEMBER_EXPERIENCE_AMOUNT							= $_DB_Query_Member_Credentials_Fetch_Array['member_experience_amount'];
+$_GLOBAL_MEMBER_LANGUAGE								= $_DB_Query_Member_Credentials_Fetch_Array['member_language'];
+$_GLOBAL_MEMBER_NUMBER_OF_POSTS							= $_DB_Query_Member_Credentials_Fetch_Array['member_number_of_posts'];
 $_GLOBAL_MEMBER_RANK								= $_DB_Query_Member_Credentials_Fetch_Array['member_rank'];
 $_GLOBAL_MEMBER_THEME								= $_DB_Query_Member_Credentials_Fetch_Array['member_theme'];
 
@@ -218,11 +218,11 @@ if ($_GLOBAL_MEMBER_BANNED_STATUS >= 1) {
  ===========================
 */
 
-$_GLOBAL_DATE										= date("l, F j, Y g:i:s A");
-$_GLOBAL_DATE_RFC									= date("r");
+$_GLOBAL_DATE									= date("l, F j, Y g:i:s A");
+$_GLOBAL_DATE_RFC								= date("r");
 $_GLOBAL_DATE_MINUTES								= date("i");
 $_GLOBAL_DATE_SECONDS								= date("s");
-$_GLOBAL_REFERRER									= $_SERVER['HTTP_REFERER'];
+$_GLOBAL_REFERRER								= $_SERVER['HTTP_REFERER'];
 
 /*
  ===========================
@@ -304,9 +304,9 @@ $DB_Query_Check_Login 								= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PRE
  ===========================
 */
 
-$DB_Query_Check_Login_Fetch_Array					= $DB->fetch_array($DB_Query_Check_Login);
-$DB_Query_Check_Login_Member_Username				= $DB_Query_Check_Login_Fetch_Array['member_username'];
-$DB_Query_Check_Login_Member_Password				= $DB_Query_Check_Login_Fetch_Array['member_password'];
+$DB_Query_Check_Login_Fetch_Array							= $DB->fetch_array($DB_Query_Check_Login);
+$DB_Query_Check_Login_Member_Username						= $DB_Query_Check_Login_Fetch_Array['member_username'];
+$DB_Query_Check_Login_Member_Password						= $DB_Query_Check_Login_Fetch_Array['member_password'];
 
 /*
  ===========================
@@ -385,7 +385,7 @@ if ($_GET["InternalApplication"] == "Logout") {
 
 if ($_GET["InternalApplication"] == "Language") {
 
-$_POST_LANGUAGE	 									= $_POST['post_language'];
+$_POST_LANGUAGE	 								= $_POST['post_language'];
 	
 	setcookie("cerberus_language","$_POST_LANGUAGE", time()+$_GLOBAL_COOKIE_TIME);
 	
@@ -425,7 +425,7 @@ if ($_GLOBAL_USERNAME && $_GLOBAL_PASSWORD != null) {
  ===========================
 */
 
-$_DB_Query_Main_Cookie_Security_Check 				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_members WHERE member_username='$_GLOBAL_USERNAME' AND member_password='$_GLOBAL_PASSWORD'");
+$_DB_Query_Main_Cookie_Security_Check 						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_members WHERE member_username='$_GLOBAL_USERNAME' AND member_password='$_GLOBAL_PASSWORD'");
 
 /*
  ===========================
@@ -509,7 +509,7 @@ if (file_exists($_USERNAME_DIRECTORY)) {
  ===========================
 */
 
-$_DB_Query_Main_Banned_Status_Security_Check 		= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_banned_ip_addresses WHERE ip_address='$_GLOBAL_REMOTE_ADDRESS'");
+$_DB_Query_Main_Banned_Status_Security_Check 					= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_banned_ip_addresses WHERE ip_address='$_GLOBAL_REMOTE_ADDRESS'");
 
 /*
  ===========================
@@ -531,8 +531,8 @@ if ($DB->num_rows($_DB_Query_Main_Banned_Status_Security_Check)) {
  ===========================
 */
 
-$_CHMOD_UPLOAD_DIRECTORY							= "Upload";
-$_CHMOD_UPLOAD_DIRECTORY_VALUE						= "0777";
+$_CHMOD_UPLOAD_DIRECTORY								= "Upload";
+$_CHMOD_UPLOAD_DIRECTORY_VALUE							= "0777";
 $_OPEN_UPLOAD_DIRECTORY								= opendir($_CHMOD_UPLOAD_DIRECTORY);
 
 while (($_CHMOD_UPLOAD_DIRECTORY_FILES = readdir($_OPEN_UPLOAD_DIRECTORY))) {
@@ -568,7 +568,7 @@ if ($_GLOBAL_USERNAME && $_GLOBAL_PASSWORD != null) {
 
 if ($_GLOBAL_MEMBER_THEME != "") {
 
-$_GLOBAL_THEME_DIRECTORY							= "$_GLOBAL_MEMBER_THEME";
+$_GLOBAL_THEME_DIRECTORY								= "$_GLOBAL_MEMBER_THEME";
 
 } // [ + ] Theme Cookie Data Check
 
@@ -652,7 +652,7 @@ if ($_GLOBAL_USERNAME && $_GLOBAL_PASSWORD != null) {
  ===========================
 */
 
-$_DB_Query_Set_Member_Last_Post 					= $DB->query("UPDATE {$_ACCESS_DATABASE_PREFIX}_members SET member_last_post='$_GLOBAL_REFERRER' WHERE member_username='$_GLOBAL_USERNAME'");
+$_DB_Query_Set_Member_Last_Post 							= $DB->query("UPDATE {$_ACCESS_DATABASE_PREFIX}_members SET member_last_post='$_GLOBAL_REFERRER' WHERE member_username='$_GLOBAL_USERNAME'");
 
 /*
  ===========================
@@ -782,7 +782,7 @@ if ($_GLOBAL_MEMBER_NUMBER_OF_POSTS >= 1500) {
  ===========================
 */
 
-$_DB_Query_Main_Member_Update_Rank 					= $DB->query("UPDATE {$_ACCESS_DATABASE_PREFIX}_members SET member_rank='$_MEMBER_RANK_UPDATE_DIGIT' WHERE member_username='$_GLOBAL_USERNAME'");
+$_DB_Query_Main_Member_Update_Rank 						= $DB->query("UPDATE {$_ACCESS_DATABASE_PREFIX}_members SET member_rank='$_MEMBER_RANK_UPDATE_DIGIT' WHERE member_username='$_GLOBAL_USERNAME'");
 
 /*
  ===========================
@@ -823,7 +823,7 @@ $DB->free($_DB_Query_Main_Member_Update_Rank);
 */
 
 $_DB_Query_Main_Member_Rank							= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_ranks ORDER BY id ASC");
-$_DB_Query_Main_Member_Rank_Fetch_Array				= $DB->fetch_array($_DB_Query_Main_Member_Rank);
+$_DB_Query_Main_Member_Rank_Fetch_Array						= $DB->fetch_array($_DB_Query_Main_Member_Rank);
 
 /*
  ===========================
@@ -1011,9 +1011,9 @@ if ($_GLOBAL_GZIP_STATUS >= 1) {
  ===========================
 */
 
-$_MAIN_PAGE_GENERATION_START_TIME					= microtime();
-$_MAIN_PAGE_GENERATION_START_ARRAY					= explode(" ", $_MAIN_PAGE_GENERATION_START_TIME);
-$_MAIN_PAGE_GENERATION_START_TIME					= $_MAIN_PAGE_GENERATION_START_ARRAY[1] + $_MAIN_PAGE_GENERATION_START_ARRAY[0];
+$_MAIN_PAGE_GENERATION_START_TIME							= microtime();
+$_MAIN_PAGE_GENERATION_START_ARRAY						= explode(" ", $_MAIN_PAGE_GENERATION_START_TIME);
+$_MAIN_PAGE_GENERATION_START_TIME							= $_MAIN_PAGE_GENERATION_START_ARRAY[1] + $_MAIN_PAGE_GENERATION_START_ARRAY[0];
 
 /*
  ===========================
@@ -1027,11 +1027,11 @@ $_MAIN_PAGE_GENERATION_START_TIME					= $_MAIN_PAGE_GENERATION_START_ARRAY[1] + 
 
 echo ("
 <!--================================================================================================-->
-<!--				    Cerberus Content Management System							  		        -->
+<!--				    Cerberus Content Management System			      -->
 <!--================================================================================================-->
 
 <!--================================================================================================-->
-<!--			    (C) Tinke Software, Gary Christopher Johnson's Works		      				-->
+<!--			    (C) Tinke Software, Gary Christopher Johnson's Works		      -->
 <!--================================================================================================-->
 
 <!--=============================-->
@@ -1115,12 +1115,12 @@ if ($_GLOBAL_USERNAME && $_GLOBAL_PASSWORD != null && $_GLOBAL_MEMBER_ACCESS_LEV
  ===========================
 */
 
-$_DB_Query_Main_Blocks_Aligned_Left 				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_blocks WHERE block_alignment='0' AND block_file_status='1' ORDER BY block_row ASC");
+$_DB_Query_Main_Blocks_Aligned_Left 						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_blocks WHERE block_alignment='0' AND block_file_status='1' ORDER BY block_row ASC");
 
 while ($_DB_Query_Main_Blocks_Aligned_Left_Fetch_Array = $DB->fetch_array($_DB_Query_Main_Blocks_Aligned_Left)) {
 
-$_MAIN_BLOCK_ALIGNED_LEFT_FILE_NAME					= $_DB_Query_Main_Blocks_Aligned_Left_Fetch_Array['block_file_name'];
-$_MAIN_BLOCK_ALIGNED_LEFT_TITLE						= $_DB_Query_Main_Blocks_Aligned_Left_Fetch_Array['block_title'];
+$_MAIN_BLOCK_ALIGNED_LEFT_FILE_NAME						= $_DB_Query_Main_Blocks_Aligned_Left_Fetch_Array['block_file_name'];
+$_MAIN_BLOCK_ALIGNED_LEFT_TITLE							= $_DB_Query_Main_Blocks_Aligned_Left_Fetch_Array['block_title'];
 
 echo ($_THIS_THEMES_BLOCKS_1);
 echo ($_MAIN_BLOCK_ALIGNED_LEFT_TITLE);
@@ -1169,8 +1169,8 @@ echo ($_GLOBAL_LAYOUT_2);
  ===========================
 */
 
-$_FIND_ADMINISTRATION_DIRECTORY						= "Module/Administration/";
-$_OPEN_ADMINISTRATION_DIRECTORY						= opendir($_FIND_ADMINISTRATION_DIRECTORY);
+$_FIND_ADMINISTRATION_DIRECTORY							= "Module/Administration/";
+$_OPEN_ADMINISTRATION_DIRECTORY							= opendir($_FIND_ADMINISTRATION_DIRECTORY);
 
 while (($_READ_ADMINISTRATION_DIRECTORY = readdir($_OPEN_ADMINISTRATION_DIRECTORY))) {
 
@@ -1247,13 +1247,13 @@ closedir($_OPEN_ADMINISTRATION_DIRECTORY);
  ===========================
 */
 
-$_DB_Query_Main_Select_Applications 				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_applications ORDER BY id ASC");
+$_DB_Query_Main_Select_Applications 						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_applications ORDER BY id ASC");
 
 while ($_DB_Query_Main_Select_Applications_Fetch_Array = $DB->fetch_array($_DB_Query_Main_Select_Applications)) {
 
-$_MAIN_APPLICATION_FILE_NAME						= $_DB_Query_Main_Select_Applications_Fetch_Array['application_file_name'];
-$_MAIN_APPLICATION_FILE_PERMISSION					= $_DB_Query_Main_Select_Applications_Fetch_Array['application_file_permission'];
-$_MAIN_APPLICATION_FILE_STATUS						= $_DB_Query_Main_Select_Applications_Fetch_Array['application_file_status'];
+$_MAIN_APPLICATION_FILE_NAME							= $_DB_Query_Main_Select_Applications_Fetch_Array['application_file_name'];
+$_MAIN_APPLICATION_FILE_PERMISSION						= $_DB_Query_Main_Select_Applications_Fetch_Array['application_file_permission'];
+$_MAIN_APPLICATION_FILE_STATUS							= $_DB_Query_Main_Select_Applications_Fetch_Array['application_file_status'];
 
 /*
  ===========================
@@ -1355,7 +1355,7 @@ $DB->free($_DB_Query_Main_Select_Applications);
  ===========================
 */
 
-$_DB_Query_Main_Select_Custom_Applications 			= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_custom_pages ORDER BY id ASC");
+$_DB_Query_Main_Select_Custom_Applications 					= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_custom_pages ORDER BY id ASC");
 
 while ($_DB_Query_Main_Select_Custom_Applications_Fetch_Array = $DB->fetch_array($_DB_Query_Main_Select_Custom_Applications)) {
 
@@ -1418,12 +1418,12 @@ echo ($_GLOBAL_LAYOUT_3);
  ===========================
 */
 
-$_DB_Query_Main_Blocks_Aligned_Right 				= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_blocks WHERE block_alignment='1' AND block_file_status='1' ORDER BY block_row ASC");
+$_DB_Query_Main_Blocks_Aligned_Right 						= $DB->query("SELECT * FROM {$_ACCESS_DATABASE_PREFIX}_blocks WHERE block_alignment='1' AND block_file_status='1' ORDER BY block_row ASC");
 
 while ($_DB_Query_Main_Blocks_Aligned_Right_Fetch_Array = $DB->fetch_array($_DB_Query_Main_Blocks_Aligned_Right)) {
 
-$_MAIN_BLOCK_ALIGNED_RIGHT_FILE_NAME				= $_DB_Query_Main_Blocks_Aligned_Right_Fetch_Array['block_file_name'];
-$_MAIN_BLOCK_ALIGNED_RIGHT_TITLE					= $_DB_Query_Main_Blocks_Aligned_Right_Fetch_Array['block_title'];
+$_MAIN_BLOCK_ALIGNED_RIGHT_FILE_NAME						= $_DB_Query_Main_Blocks_Aligned_Right_Fetch_Array['block_file_name'];
+$_MAIN_BLOCK_ALIGNED_RIGHT_TITLE							= $_DB_Query_Main_Blocks_Aligned_Right_Fetch_Array['block_title'];
 
 echo ($_THIS_THEMES_BLOCKS_1);
 
@@ -1465,11 +1465,11 @@ echo ($_GLOBAL_LAYOUT_4);
  ===========================
 */
 
-$_MAIN_PAGE_GENERATION_END_TIME						= microtime();
-$_MAIN_PAGE_GENERATION_END_ARRAY					= explode(" ", $_MAIN_PAGE_GENERATION_END_TIME);
-$_MAIN_PAGE_GENERATION_END_TIME						= $_MAIN_PAGE_GENERATION_END_ARRAY[1] + $_MAIN_PAGE_GENERATION_END_ARRAY[0];
-$_MAIN_PAGE_GENERATION_TOTAL_TIME					= $_MAIN_PAGE_GENERATION_END_TIME - $_MAIN_PAGE_GENERATION_START_TIME; 
-$_MAIN_PAGE_GENERATION_TOTAL_TIME					= round($_MAIN_PAGE_GENERATION_TOTAL_TIME,5);
+$_MAIN_PAGE_GENERATION_END_TIME							= microtime();
+$_MAIN_PAGE_GENERATION_END_ARRAY							= explode(" ", $_MAIN_PAGE_GENERATION_END_TIME);
+$_MAIN_PAGE_GENERATION_END_TIME							= $_MAIN_PAGE_GENERATION_END_ARRAY[1] + $_MAIN_PAGE_GENERATION_END_ARRAY[0];
+$_MAIN_PAGE_GENERATION_TOTAL_TIME							= $_MAIN_PAGE_GENERATION_END_TIME - $_MAIN_PAGE_GENERATION_START_TIME; 
+$_MAIN_PAGE_GENERATION_TOTAL_TIME							= round($_MAIN_PAGE_GENERATION_TOTAL_TIME,5);
 
 /*
  ===========================
