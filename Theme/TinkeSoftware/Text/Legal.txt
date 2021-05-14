@@ -1,0 +1,7 @@
+<CENTER><BIG><B>This software is protected by copyright laws.</B></BIG></CENTER>
+<HR>
+<CENTER>This theme was created by Gary Christopher Johnson</CENTER><BR>
+&middot; Administration and Member cPanel icons taken from Laurent Baumann ( Non-Commercial use only )<BR>
+&middot; This Theme was created using the GNU Image Manipulation Program, ULEAD PhotoImpact and Adobe PhotoShop on the Operating System: Arch-Linux<BR>
+<HR>
+<CENTER>&copy; Tinke Software, Gary Christopher Johnson's Works 2005 - 2021, All Rights Reserved.</CENTER>
