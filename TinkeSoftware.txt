@@ -25,7 +25,7 @@
         `-.|  |.-`           \ /							   
            '--'               ^				    TINKE SOFTWARE
 						     	Free and Open Source Software // Parent Company: Eihwaz Software
-						- 100% Free, Original and Quality Code -
+						- 100% Free, Original, Clean and Quality Code -
 
 
 Official Web Servers
@@ -55,7 +55,7 @@ TinkeSoftware@PhotoBucket
 / /__/ -_) __/ _ \/ -_) __/ // (_-<  / /__/ /|_/ /\ \  
 \___/\__/_/ /_.__/\__/_/  \_,_/___/  \___/_/  /_/___/  
                                                        
-* Cerberus Content Management System // Advanced Content Management System, Written In PurePHP Programming Code
+* Cerberus Content Management System // Advanced Content Management System, Written In Pure PHP Programming Code
 * Magysk Theme Writer // Application For Building Themes For Cerberus Content Management System, Written In C++ Programming Code
 * Stokje Application Writer // Application For Building Web Applications For Cerberus Content Management System, Written In C++ Programming Code
   _____         __  __        ____                   
