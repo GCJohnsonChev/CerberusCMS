@@ -80,4 +80,4 @@ TinkeSoftware@PhotoBucket
 \___/\__/_//_/\__/\___/\___/ /_/|_/____/\____/_/|_|  
                                                      
 - Free
-* Gentoo-Linux For Original Microsoft XBOX Game Consoles, Forked From GentooX
+* Gentoo-Linux Operating System For Original Microsoft XBOX Game Consoles, Forked From GentooX
