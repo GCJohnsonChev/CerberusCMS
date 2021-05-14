@@ -30,6 +30,7 @@
 
 Official Web Servers
 https://www.TinkeSoftware.com
+https://www.Tinke.EihwazSoftware.com
 
 Official Electronic Mail Addresses
 TinkeSoftware@Protonmail.com
@@ -49,17 +50,17 @@ TinkeSoftware@Twitter
 TinkeSoftware@FaceBook
 TinkeSoftware@PhotoBucket
 
-  _____        __                  
- / ___/__ ____/ /  ___ ______ _____
-/ /__/ -_) __/ _ \/ -_) __/ // (_-<
-\___/\__/_/ /_.__/\__/_/  \_,_/___/
-                                   
-* Cerberus Content Management System // Advanced PHP-SQL Content Management System
-* Magysk Theme Writer // C++ Application For Building Themes For Cerberus Content Management System
-* Stokje Application Writer // C++ Application For Building Applications For Cerberus Content Management System
+  _____        __                      _______  _______
+ / ___/__ ____/ /  ___ ______ _____   / ___/  |/  / __/
+/ /__/ -_) __/ _ \/ -_) __/ // (_-<  / /__/ /|_/ /\ \  
+\___/\__/_/ /_.__/\__/_/  \_,_/___/  \___/_/  /_/___/  
+                                                       
+* Cerberus Content Management System // Advanced Content Management System, Written In PurePHP Programming Code
+* Magysk Theme Writer // Application For Building Themes For Cerberus Content Management System, Written In C++ Programming Code
+* Stokje Application Writer // Application For Building Web Applications For Cerberus Content Management System, Written In C++ Programming Code
   _____         __  __        ____                   
  / ___/_____ __/ /_/ /____   / __/__  ___________ ___
 / (_ / __/ // / __/ __/ -_) / _// _ \/ __/ __/ -_|_-<
 \___/_/  \_,_/\__/\__/\__/ /_/  \___/_/  \__/\__/___/
                                                      
-* Grutte Forces // Advanced C++, Python Telemetry-Stylometry Scanner, Network and Profile Blocker
+* Grutte Forces // Advanced Telemetry-Stylometry Scanner, Network and Profile Blocker, Written In C++ and Python Programming Code
