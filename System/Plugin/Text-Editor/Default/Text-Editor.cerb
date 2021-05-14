@@ -1,0 +1,75 @@
+<?php
+/*
+ ===========================================================================================
+ + Cerberus Content Management System.
+ + ---
+ + - Author : Gary Christopher Johnson
+ + - E-Mail : TinkeSoftware@Protonmail.com // GCJohnsonChevalier@Protonmail.com
+ + - Company: Tinke Software
+ + - Notes  : View this file in a non-formatting text editor for correct indentation display
+ + ---
+ +
+ +
+ +
+ +
+ +
+ +
+ +
+ +
+ +
+ +
+ +
+ + ---
+ + - File Location: root->System->Plugin->Text-Editor->Default->Text-Editor.cerb
+ + - File Version:  0.5 - Friday, May 14, 2021.
+ + ---
+ +%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ +%%%()()%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()()()%%%%%%%%%%%%
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
+ +%%()%%%%%()()()%%()()()%%()()()%%()()()%%()()()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%%%%%
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%/-\%
+ +%%()%%%%%()%%%%%%()%%()%%()%%()%%()%%%%%%()%%()%%()%%()%%%%%%()%%%%%%%%%%%%|4|%  ~ Wynn ~
+ +%%%()()%%()()()%%()%%()%%()()()%%()()()%%()%%()%%()()()%%()()()%%%%%%%%%%%%\-/% Build: 0.7
+ ===========================================================================================
+*/
+
+$_GLOBAL_TEXTEDITOR_BUTTONS					= "
+									<script type=\"text/javascript\" src=\"./System/Plugin/Text-Editor/Default/Text-Editor.js\"></script>
+ 										<DIV CLASS=\"dropdown\">
+ 											<BUTTON CLASS=\"dropbtn\">:: Safe-HTML Codes ::</button>
+											<DIV CLASS=\"dropdown-content\">
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '[b]', '[/b]');\" TITLE=\"Insert :: Bold :: BB Code\">[B]</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '[u]', '[/u]');\" TITLE=\"Insert :: Underlined :: BB Code\">[U]</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '[i]', '[/i]');\" TITLE=\"Insert :: Italic :: BB Code\">[I]</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '[big]', '[/big]');\" TITLE=\"Insert :: Big :: BB Code\">[BIG]</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '[center]', '[/center]');\" TITLE=\"Insert :: Centered :: BB Code\">[CNTR]</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '[br]', '');\" TITLE=\"Insert :: Break Repeat :: BB Code\">[BR]</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '[q]', '[/q]');\" TITLE=\"Insert :: Quote :: BB Code\">[Q]</BUTTON>
+												<A HREF=\"?$_INTERNAL_USER_MODULE&#61;List&amp;Display&#61;SafeHTML\" TARGET=\"_NEW\">All BB Codes</A>
+											</DIV>
+										</DIV>
+
+ 										<DIV CLASS=\"dropdown\">
+ 											<BUTTON CLASS=\"dropbtn\">:: OS Emojis ::</button>
+											<DIV CLASS=\"dropdown-content\">
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '😀', '');\" TITLE=\"Insert :: 😀 :: Emoji\">😀</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '😁', '');\" TITLE=\"Insert :: 😁 :: Emoji\">😁</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '😂', '');\" TITLE=\"Insert :: 😂 :: Emoji\">😂</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '🤣', '');\" TITLE=\"Insert :: 🤣 :: Emoji\">🤣</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '😃', '');\" TITLE=\"Insert :: 😃 :: Emoji\">😃</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '😄', '');\" TITLE=\"Insert :: 😄 :: Emoji\">😄</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '😅', '');\" TITLE=\"Insert :: 😅 :: Emoji\">😅</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '😆', '');\" TITLE=\"Insert :: 😆 :: Emoji\">😆</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '😉', '');\" TITLE=\"Insert :: 😉 :: Emoji\">😉</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '😊', '');\" TITLE=\"Insert :: 😊 :: Emoji\">😊</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '😋', '');\" TITLE=\"Insert :: 😋 :: Emoji\">😋</BUTTON>
+												<BUTTON TYPE=\"button\" CLASS=\"button\" onclick=\"insert('WYSIWYG', '😎', '');\" TITLE=\"Insert :: 😎 :: Emoji\">😎</BUTTON>
+												<A HREF=\"?$_INTERNAL_USER_MODULE&#61;List&amp;Display&#61;Emoji_OS\" TARGET=\"_NEW\">All Emojis</A>
+											</DIV>
+										</DIV>
+								";
+
+?>
