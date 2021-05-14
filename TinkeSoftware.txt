@@ -27,7 +27,7 @@
 						     	Free and Open Source Software // Associated Organization: Eihwaz Software
 						- 100% Free, Original, Clean and Quality Projects -
 
-Tinke Software is a Free and Open Source Software Organization. This organization develops, stores and dispenses a few FOSS projects.
+Tinke Software is a Free and Open Source Software Organization. This organization stores, develops and dispenses FOSS projects.
 It is going to be associated with Eihwaz Software, a Commercial Software Organization.
 
 Official Web Servers
