@@ -73,11 +73,11 @@ TinkeSoftware@PhotoBucket
 - Free and Open Source
 * Grutte Forces - Named From The Historical Frisian Pirate Lord Grutte Pier
 // Advanced Telemetry-Stylometry Scanner, Network and Profile Blocker, Written In C++ and Python Programming Code
-   ____           ___        ___           __   ___                   __
-  / __/__ _    __/ (_)__    / _ \___ ____ / /  / _ )___  ___ ________/ /
- _\ \/ _ \ |/|/ / / / _ \  / // / _ `(_-</ _ \/ _  / _ \/ _ `/ __/ _  / 
-/___/\___/__,__/_/_/\___/ /____/\_,_/___/_//_/____/\___/\_,_/_/  \_,_/  
-                                                                        
+   ____           _ __       ___           __   __                    __
+  / __/__ _    __(_) /__    / _ \___ ____ / /  / /  ___  ___ ________/ /
+ _\ \/ _ \ |/|/ / / / _ \  / // / _ `(_-</ _ \/ _ \/ _ \/ _ `/ __/ _  / 
+/___/\___/__,__/_/_/\___/ /____/\_,_/___/_//_/_.__/\___/\_,_/_/  \_,_/  
+                                                                                                                                                 
 - Free and Open Source
 * Sowilo DashBoard - Named From The Sowilo Frisian-Germanic Rune
 // DashBoard For The Original Microsoft XBOX Game Consoles
