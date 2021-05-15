@@ -62,9 +62,9 @@ TinkeSoftware@PhotoBucket
 * Cerberus Content Management System - Named From The Hound of Hades
 // Advanced Content Management System, Written In Pure PHP Programming Code, With AJAX and JavaScript Editions
 * Magysk Theme Writer - Named From The Frisian Word For Magic
-// Application For Building Themes For Cerberus Content Management System, Written In C++ Programming Code
+// GUI Application For Building Themes For Use With Cerberus Content Management System, Written In C++ Programming Code
 * Stokje Application Writer - Named From The Frisian Word For Wand
-// Application For Building Web Application Includes For Use With Cerberus Content Management System, Written In C++ Programming Code
+// GUI Application For Building Web Application Module Includes For Use With Cerberus Content Management System, Written In C++ Programming Code
   _____         __  __        ____                   
  / ___/_____ __/ /_/ /____   / __/__  ___________ ___
 / (_ / __/ // / __/ __/ -_) / _// _ \/ __/ __/ -_|_-<
