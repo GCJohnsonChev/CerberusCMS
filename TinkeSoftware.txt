@@ -59,7 +59,7 @@ TinkeSoftware@PhotoBucket
 \___/\__/_/ /_.__/\__/_/  \_,_/___/  \___/_/  /_/___/  
                                                        
 - Free and Open Source & Paid Open Source
-* Cerberus Content Management System - Named From The Greek and Roman Demi-God
+* Cerberus Content Management System - Named From The Hound of Hades
 // Advanced Content Management System, Written In Pure PHP Programming Code, With AJAX and JavaScript Editions
 * Magysk Theme Writer - Named From The Frisian Word For Magic
 // Application For Building Themes For Cerberus Content Management System, Written In C++ Programming Code
