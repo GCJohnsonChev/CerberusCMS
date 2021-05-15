@@ -60,7 +60,7 @@ TinkeSoftware@PhotoBucket
                                                        
 - Free and Open Source & Paid Open Source
 * Cerberus Content Management System - Named From The Greek and Roman Demi-God
-// Advanced Content Management System, Written In Pure PHP Programming Code, With AJAX and JavaScript Editions.
+// Advanced Content Management System, Written In Pure PHP Programming Code, With AJAX and JavaScript Editions
 * Magysk Theme Writer - Named From The Frisian Word For Magic
 // Application For Building Themes For Cerberus Content Management System, Written In C++ Programming Code
 * Stokje Application Writer - Named From The Frisian Word For Wand
